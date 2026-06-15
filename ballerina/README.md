@@ -32,28 +32,28 @@ Within app developer accounts, you can create a [developer test account](https:/
 > **Note:** These accounts are only for development and testing purposes. In production you should not use Developer Test Accounts.
 
 1. Go to the Test accounts section from the left sidebar.
-   ![Test accounts section](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/test-account.png)
+   ![Test accounts section](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/test-account.png)
 
 2. Click on the `Create developer test account` button on the top right corner.
-   ![Create developer test account](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/create-test-account.png)
+   ![Create developer test account](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/create-test-account.png)
 
 3. In the pop-up window, provide a name for the test account and click on the `Create` button.
-   ![Create test account](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/create-account.png)
+   ![Create test account](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/create-account.png)
    You will see the newly created test account in the list of test accounts.
-   ![Test account portal](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/test-account-portal.png)
+   ![Test account portal](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/test-account-portal.png)
 
 ### Step 3: Create a HubSpot App
 
 1. Now navigate to the `Apps` section from the left sidebar and click on the `Create app` button on the top right corner.
-   ![Create app](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/create-app.png)
+   ![Create app](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/create-app.png)
 
 2. Provide a public app name and description for your app.
-   ![App name and description](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/app-name-desc.png)
+   ![App name and description](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/app-name-desc.png)
 
 ### Step 4: Setup Authentication
 
 1. Move to the `Auth` tab.
-   ![Configure authentication](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/config-auth.png)
+   ![Configure authentication](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/config-auth.png)
 
 2. In the `Scopes` section, add the following scopes for your app using the `Add new scopes` button.
    - `e-commerce`
@@ -64,16 +64,16 @@ Within app developer accounts, you can create a [developer test account](https:/
    - `crm.objects.custom.write`
    - `crm.objects.feedback_submissions.read`
 
-   ![Add scopes](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/add-scopes.png)
+   ![Add scopes](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/add-scopes.png)
 
 3. In the `Redirect URL` section, add the redirect URL for your app. This is the URL where the user will be redirected after the authentication process. You can use `localhost` for testing purposes. Then click the `Create App` button.
 
-   ![Redirect URL](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/redirect-url.png)
+   ![Redirect URL](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/redirect-url.png)
 
 ### Step 5: Get the Client ID and Client Secret
 
 Navigate to the `Auth` tab and you will see the `Client ID` and `Client Secret` for your app. Make sure to save these values.
-![Client ID and Client Secret](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/client-id-secret.png)
+![Client ID and Client Secret](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/client-id-secret.png)
 
 ### Step 6: Setup Authentication Flow
 
@@ -87,7 +87,7 @@ Before proceeding with the Quickstart, ensure you have obtained the Access Token
 
    Replace the `<YOUR_CLIENT_ID>`, `<YOUR_REDIRECT_URI>` and `<YOUR_SCOPES>` with your specific value.
 2. Paste it in the browser and select your developer test account to install the app when prompted.
-   ![Account select](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/main/docs/resources/account-select.png)
+   ![Account select](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/main/docs/resources/account-select.png)
 
 3. A code will be displayed in the browser. Copy the code.
 
@@ -181,6 +181,6 @@ public function main() returns error? {
 
 The `HubSpot CRM Feedback` connector provides practical examples illustrating usage in various scenarios.
 
-1. [Feedback Reviewing](https://github.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/tree/main/examples/feedback_review) - This example demonstrates the usage of the HubSpot CRM Feedback connector to read a page of feedback submissions, read an object identified by `{feedbackSubmissionId}`, read a batch of feedback submissions by internal ID, or unique property values, and search feedback submissions.
+1. [Feedback Reviewing](https://github.com/ballerina-platform/module-ballerinax-hubspot.crm.obj.feedback/tree/main/examples/feedback_review) - This example demonstrates the usage of the HubSpot CRM Feedback connector to read a page of feedback submissions, read an object identified by `{feedbackSubmissionId}`, read a batch of feedback submissions by internal ID, or unique property values, and search feedback submissions.
 
 > **Note**: The feedback submissions endpoints are currently read only. Feedback submissions cannot be submitted or edited through the API. You can only create properties in the [feedback surveys tool within HubSpot](https://knowledge.hubspot.com/customer-feedback/create-a-custom-survey), and the properties cannot be edited after creation.
