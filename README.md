@@ -2,7 +2,7 @@
 
 [![Build](https://github.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/actions/workflows/ci.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/actions/workflows/ci.yml)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback.svg)](https://github.com/ballerina-platform/module-ballerinax-hubspot.crm.object.feedback/commits/master)
-[![GitHub Issues](https://img.shields.io/github/issues/ballerina-platform/ballerina-library/module/hubspot.crm.object.feedback.svg?label=Open%20Issues)](https://github.com/ballerina-platform/ballerina-library/labels/module%hubspot.crm.object.feedback)
+[![GitHub Issues](https://img.shields.io/github/issues/ballerina-platform/ballerina-library/module/hubspot.crm.object.feedback.svg?label=Open%20Issues)](https://github.com/ballerina-platform/ballerina-library/labels/module%2Fhubspot.crm.object.feedback)
 
 ## Overview
 
@@ -124,7 +124,7 @@ Before proceeding with the Quickstart, ensure you have obtained the Access Token
 
 ## Quickstart
 
-To use the `Hubspot CRM Feedback Submission` connector in your Ballerina application, update the `.bal` file as follows:
+To use the `HubSpot CRM Feedback Submission` connector in your Ballerina application, update the `.bal` file as follows:
 
 ### Step 1: Import the module
 
