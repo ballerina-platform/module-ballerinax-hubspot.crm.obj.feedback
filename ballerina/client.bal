@@ -39,7 +39,7 @@ public isolated client class Client {
         self.clientEp = check new (serviceUrl, httpClientConfig);
     }
 
-    # Read a batch of feedback submissions by internal ID, or unique property values
+    # Read a batch of submissions
     #
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
@@ -58,8 +58,9 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # Read
+    # Get a feedback submission
     #
+    # + feedbackSubmissionId - The unique ID of the feedback submission to retrieve.
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - successful operation 
@@ -75,8 +76,9 @@ public isolated client class Client {
         return self.clientEp->get(resourcePath, httpHeaders);
     }
 
-    # Archive
+    # Archive a feedback submission
     #
+    # + feedbackSubmissionId - The unique ID of the feedback submission to delete.
     # + headers - Headers to be sent with the request 
     # + return - No content 
     resource isolated function delete [string feedbackSubmissionId](map<string|string[]> headers = {}) returns error? {
@@ -89,8 +91,9 @@ public isolated client class Client {
         return self.clientEp->delete(resourcePath, headers = httpHeaders);
     }
 
-    # Update
+    # Update a feedback submission
     #
+    # + feedbackSubmissionId - The unique ID of the feedback submission to update.
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - successful operation 
@@ -108,7 +111,7 @@ public isolated client class Client {
         return self.clientEp->patch(resourcePath, request, httpHeaders);
     }
 
-    # Archive a batch of feedback submissions by ID
+    # Archive a batch of submissions
     #
     # + headers - Headers to be sent with the request 
     # + return - No content 
@@ -125,7 +128,7 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # Create a batch of feedback submissions
+    # Create a batch of submissions
     #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
@@ -142,7 +145,7 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # Update a batch of feedback submissions
+    # Update a batch of submissions
     #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
@@ -159,7 +162,7 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # List
+    # List feedback submissions
     #
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
@@ -176,7 +179,7 @@ public isolated client class Client {
         return self.clientEp->get(resourcePath, httpHeaders);
     }
 
-    # Create
+    # Create a feedback submission
     #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
@@ -193,7 +196,7 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # Create or update a batch of feedback submissions by unique property values
+    # Upsert a batch of submissions
     #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
@@ -210,6 +213,8 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
+    # Search feedback submissions
+    #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
     resource isolated function post search(PublicObjectSearchRequest payload, map<string|string[]> headers = {}) returns CollectionResponseWithTotalSimplePublicObjectForwardPaging|error {
